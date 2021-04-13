@@ -1,7 +1,6 @@
-import React, { useState,useEffect} from 'react';
+import React, { useState} from 'react';
 import ColorPicker from './ColorPicker';
 import Button from 'react-bootstrap/Button';
-import { getQueriesForElement } from '@testing-library/dom';
 
 
 const SwatchCreator = (props) => {
@@ -20,24 +19,24 @@ const SwatchCreator = (props) => {
         props.saveSwatch(swatch);
 
     }
-    const resetSwatch =() => {
-        console.log(resetSwatch);
-        const swatchReset = {
-            title: title,
-            // color: [{color1:'128'}, {color2:'128'}, {color3:'128'}, {color4:'128'}]
-            // title: title,
-            colors: [{r:'128', g:'128', b:'128'},
-            {r:'128', g:'128', b:'128'},
-            {r:'128', g:'128', b:'128'},
-            {r:'128', g:'128', b:'128'}]
+    // const resetSwatch =() => {
+    //     console.log(resetSwatch);
+    //     const swatchReset = {
+    //         title: title,
+    //         // color: [{color1:'128'}, {color2:'128'}, {color3:'128'}, {color4:'128'}]
+    //         // title: title,
+    //         colors: [{r:'128', g:'128', b:'128'},
+    //         {r:'128', g:'128', b:'128'},
+    //         {r:'128', g:'128', b:'128'},
+    //         {r:'128', g:'128', b:'128'}]
             
-        }
-        setColor1({r:'128', g:'128', b:'128'})
-        setColor2({r:'128', g:'128', b:'128'})
-        setColor3({r:'128', g:'128', b:'128'})
-        setColor4({r:'128', g:'128', b:'128'})
-        props.resetSwatch(swatchReset);
-    }
+    //     }
+    //     setColor1({r:'128', g:'128', b:'128'})
+    //     setColor2({r:'128', g:'128', b:'128'})
+    //     setColor3({r:'128', g:'128', b:'128'})
+    //     setColor4({r:'128', g:'128', b:'128'})
+    //     props.resetSwatch(swatchReset);
+    // }
     const [title, setTitle] = useState ('');
     const [color1, setColor1] = useState ({});
     const [color2, setColor2] = useState ({});

@@ -3,7 +3,6 @@ import './App.css';
 import SwatchCreator from './Components/SwatchCreator';
 import Swatch from './Components/Swatch';
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 
 
 
