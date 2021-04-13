@@ -1,23 +1,37 @@
-import ColorPicker from './Components/ColorPicker';
+// import ColorPicker from './Components/ColorPicker';
 import './App.css';
+import SwatchCreator from './Components/SwatchCreator';
+import Swatch from './Components/Swatch';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
 
-function App() {
+
+const App = () => {
+    const [swatches, setSwatches] = useState([]);
+    const saveSwatch = (newSwatch) => {
+      setSwatches([...swatches, newSwatch])
+    }
+    const resetSwatch =() => {
+      setSwatches([])
+    }
+    
   return (
-    <div className="App">
-          <h1>Swatch Creator</h1>
-          <input textarea=""></input>
-          <div className="card-color">
-      
-            <ColorPicker />
-            <ColorPicker />
-            <ColorPicker />
-        
-          </div>
-          <button >Save</button>
-    </div>
+      <div className='App'>
+          <h1 className='swatch-title'>Swatch Creator</h1>
+              <SwatchCreator saveSwatch={saveSwatch} resetSwatch={resetSwatch} />
+              <div className='swatch-main-wrapper'>
+                {swatches.map((swatch,id) => (
+                    <div>
+                      <Swatch title={swatch.title} colors={swatch.colors} key={id}/>
+                    </div>
+                ))}
+              </div>
+            {/* <Button className='btnSave'onClick={saveSwatch}>Save</Button> */}
+            {/* <Button className='btnReset'onClick={resetSwatch}>Reset App</Button> */}
+            
+      </div>
     
   );
 }
-
-export default App;
+export default App

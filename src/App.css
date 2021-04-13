@@ -2,22 +2,67 @@
   border-radius: 100%;
   height: 100px;
   width: 100px;
-  background-color:cornflowerblue;
   margin-top: 5px;
-  text-align:center;
-  /* justify-content: center; */
+  margin: auto;
+  
 }
 
 .card {
   width: 220px;
-  height: 300px;
+ 
   border-radius: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 1em;
+  background-color:cornsilk;
 }
 .App {
+ 
   text-align: center;
+  /* background-color:cornflowerblue; */
 
 }
 .card-color {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 1em;
+  
+}
+.inputNumber {
+  width: 10em;
+  margin-top: 10px;
+}
+.btnSave {
+  width: 5em;
+  margin-right: 5px;
+  margin-bottom: 1em;
+}
+.btnReset {
+  width: 5em;
+  margin-left: 5px;
+  margin-bottom: 1em;
+}
+.swatch-main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.inputNumber{
+  margin-left: 5px;
+}
+.swatch-name{
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.swatch-title {
+  color: whitesmoke;
+}
+body {
+  /* background-color:cornflowerblue; */
+  background-image: url("/src/wallpapertip_wallpaper-screen-wallpaper_863976.jpg");
 }

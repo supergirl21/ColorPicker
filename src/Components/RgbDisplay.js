@@ -8,7 +8,6 @@ const RgbDisplay = (props) => {
           <div>
             <label>{props.label}</label>
             <input className='inputNumber'
-            // id="typeinp" 
             type="number" 
             min="0" max="255" 
             value={props.val}
