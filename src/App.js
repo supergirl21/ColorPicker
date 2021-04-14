@@ -16,9 +16,9 @@ const App = () => {
     }
     
   return (
-      <div className='App'>
+      <div className='App' >
           <h1 className='swatch-title'>Swatch Creator</h1>
-              <SwatchCreator saveSwatch={saveSwatch} resetSwatch={resetSwatch} />
+              <SwatchCreator className="swatchResult" saveSwatch={saveSwatch} resetSwatch={resetSwatch} />
               <div className='swatch-main-wrapper'>
                 {swatches.map((swatch,id) => (
                     <div>

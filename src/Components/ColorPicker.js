@@ -21,7 +21,7 @@ const ColorPicker = ({setColor}) => {
   return (
       <div >
           <Card className ="card">
-              <Card.Body>
+              <Card.Body className ="cardResult">
                 <Slider 
                 label="R"
                 val={red}

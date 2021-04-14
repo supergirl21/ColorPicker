@@ -5,7 +5,7 @@ const Slider = (props) => {
   //  console.log(props);
 
   return (         
-          <div>
+          <div className="slider">
             <label>{props.label}</label>
             <input 
             id="typeinp" 
